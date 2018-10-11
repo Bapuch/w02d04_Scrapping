@@ -1,7 +1,7 @@
 The Ancient Art of Scrapping
 ==========
 
-## Exercice de Jeudi 11 Octobre sur les *scrapping* :sunny: 
+## Exercice de Jeudi 11 Octobre sur le *scrapping* :sunny:
 
 ### Greetings
 
