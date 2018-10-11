@@ -20,6 +20,7 @@ def get_all_the_urls_of_val_doise_townhalls(url, xpath)
 
     urls[el.text] = "http://annuaire-des-mairies.com#{el['href'].delete_prefix('.')}"
   end
+
   urls
 end
 

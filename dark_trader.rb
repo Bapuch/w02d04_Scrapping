@@ -8,10 +8,11 @@ def crypto_price
   page = Nokogiri::HTML(open("https://coinmarketcap.com/all/views/all/"))
   xpath_price = "//a[@class='price' and @data-usd]"
   xpath_name = "//a[@class='currency-name-container link-secondary']"
-  (1..page.xpath(xpath_price).length).each { |i|
+  (1..page.xpath(xpath_price).length).each do |i|
     next if page.xpath(xpath_price)[i].nil?
+
     list_crypto_prices.push({ page.xpath(xpath_name)[i].text => page.xpath(xpath_price)[i].text })
-  }
+  end
 
   list_crypto_prices
 end
